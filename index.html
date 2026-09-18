@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the buddy archive ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0b0b0d;
+  color:#eeeae5;
+  font-family:Arial,sans-serif;
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  z-index:999;
+}
+
+.page{
+  min-height:100vh;
+  padding:28px 22px 70px;
+  max-width:850px;
+  margin:auto;
+}
+
+.mono{
+  font-family:'DM Mono',monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#88858a;
+}
+
+.hero{
+  min-height:92vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+}
+
+.hero small{
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(54px,14vw,105px);
+  line-height:.88;
+  font-weight:500;
+  letter-spacing:-4px;
+}
+
+.hero h1 em{
+  color:#b9a99b;
+}
+
+.hero p{
+  max-width:520px;
+  margin-top:32px;
+  color:#aaa6a5;
+  line-height:1.8;
+  font-size:15px;
+}
+
+.enter{
+  margin-top:40px;
+  width:max-content;
+  padding:14px 20px;
+  border:1px solid #454247;
+  background:transparent;
+  color:#eeeae5;
+  font-family:'DM Mono',monospace;
+  font-size:11px;
+  letter-spacing:1.5px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.enter:hover{
+  background:#eeeae5;
+  color:#0b0b0d;
+}
+
+.corner{
+  position:absolute;
+  bottom:22px;
+  right:0;
+}
+
+section{
+  padding:95px 0;
+  border-top:1px solid #252428;
+}
+
+.section-number{
+  color
